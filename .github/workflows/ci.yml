@@ -59,3 +59,17 @@ jobs:
       - name: Build frontend
         working-directory: frontend
         run: npm run build
+  
+  docker:
+    name: Build Docker images
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Validate Docker Compose configuration
+        run: docker compose config
+
+      - name: Build Docker images
+        run: docker compose build
