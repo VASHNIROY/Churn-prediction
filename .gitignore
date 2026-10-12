@@ -17,8 +17,7 @@ htmlcov/
 !.env.example
 
 # Local data files
-data/raw/
-data/processed/
+data/
 
 # Frontend dependencies and build output
 frontend/node_modules/
@@ -35,3 +34,6 @@ Thumbs.db
 # IDE settings
 .vscode/
 .idea/
+
+# Jupyter
+.ipynb_checkpoints/
